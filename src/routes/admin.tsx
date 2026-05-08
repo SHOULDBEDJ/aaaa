@@ -10,7 +10,15 @@ import { supabase } from "@/integrations/supabase/client";
 import { isAuthed, login, logout } from "@/lib/admin-auth";
 
 export const Route = createFileRoute("/admin")({
-  head: () => ({ meta: [{ title: "Admin — PMDS" }, { name: "robots", content: "noindex" }] }),
+  head: () => ({ 
+    meta: [
+      { title: "Admin — PMDS" }, 
+      { name: "robots", content: "noindex" }
+    ],
+    links: [
+      { rel: "manifest", href: "/manifest.json" }
+    ]
+  }),
   component: AdminPage,
 });
 
