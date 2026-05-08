@@ -1,0 +1,17 @@
+{
+  "name": "PMDS Admin Panel",
+  "short_name": "PMDS Admin",
+  "description": "Admin Panel for Perfect Motor Driving School",
+  "start_url": "/admin",
+  "scope": "/admin",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2563eb",
+  "icons": [
+    {
+      "src": "/icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
